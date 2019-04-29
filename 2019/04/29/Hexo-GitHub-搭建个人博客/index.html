@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="技术分享,">
 
 
 
@@ -79,14 +79,18 @@
 
 
 
+<meta name="description" content="Setup hexo &amp;amp; create a blog npm install -g hexo cd ~/ hexo init my-blog cd my-blog npm install  本地发布测试是否成功 hexo server ，如果开启调试模式：hexo server -d  deploy npm install hexo-deployer-git –save git配置此处略">
+<meta name="keywords" content="技术分享">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo + GitHub 搭建个人博客">
 <meta property="og:url" content="http://yoursite.com/2019/04/29/Hexo-GitHub-搭建个人博客/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Setup hexo &amp;amp; create a blog npm install -g hexo cd ~/ hexo init my-blog cd my-blog npm install  本地发布测试是否成功 hexo server ，如果开启调试模式：hexo server -d  deploy npm install hexo-deployer-git –save git配置此处略">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-28T16:17:33.049Z">
+<meta property="og:updated_time" content="2019-04-29T14:55:27.204Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo + GitHub 搭建个人博客">
+<meta name="twitter:description" content="Setup hexo &amp;amp; create a blog npm install -g hexo cd ~/ hexo init my-blog cd my-blog npm install  本地发布测试是否成功 hexo server ，如果开启调试模式：hexo server -d  deploy npm install hexo-deployer-git –save git配置此处略">
 
 
 
@@ -298,7 +302,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-29T00:17:32+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-29T00:17:00+08:00">
                 2019-04-29
               </time>
             
@@ -307,6 +311,15 @@
 
             
           </span>
+		  
+		  
+		  <span class="post-updated">
+			&nbsp; | &nbsp; 更新于
+			<time itemprop="dateUpdated" datetime="2019-04-29T22:55:27+08:00" content="2019-04-29">
+			  2019-04-29
+			</time>
+		  </span>
+		
 
           
 
@@ -336,7 +349,23 @@
       
 
       
-        
+        <ol>
+<li><p>Setup hexo &amp; create a blog<br> npm install -g hexo<br> cd ~/<br> hexo init my-blog<br> cd my-blog<br> npm install</p>
+</li>
+<li><p>本地发布测试是否成功<br> hexo server ，如果开启调试模式：hexo server -d</p>
+</li>
+<li><p>deploy<br> npm install hexo-deployer-git –save<br> git配置此处略过<br> gitHub 上新建一个仓库：命名规则：yourName.github.io,修改_config.yml<br>   具体配置:<br>   deploy:</p>
+<pre><code>type: git
+repository: git@github.com:yourName/yourName.github.io.git
+branch: master 
+</code></pre><p>注意：冒号后面必须有一个空格<br>  hexo clean –简写为: hexo c<br>  hexo generate  –简写为: hexo g<br>  hexo deploy   – 简写为：hexo d</p>
+</li>
+<li><p>常用命令<br> hexo new “postName” #新建文章<br> hexo new page “pageName” #新建页面<br> hexo generate #生成静态页面至public目录<br> hexo server #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）<br> hexo deploy #部署到GitHub<br> hexo help  # 查看帮助<br> hexo version  #查看Hexo的版本</p>
+<p> 缩写：<br>   hexo n == hexo new<br>   hexo g == hexo generate<br>   hexo s == hexo server<br>   hexo d == hexo deploy</p>
+<p> 组合命令：<br>   hexo s -g #生成并本地预览<br>   hexo d -g #生成并上传</p>
+</li>
+</ol>
+
       
     </div>
     
@@ -364,7 +393,7 @@
 
     
       <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="cuidq 微信支付">
+        <img id="wechat_qr" src="/images/wechat.png" alt="cuidq 微信支付">
         <p>微信支付</p>
       </div>
     
@@ -377,11 +406,6 @@
     
 
     
-      <div id="bitcoin" style="display: inline-block">
-        <img id="bitcoin_qr" src="/images/bitcoin.png" alt="cuidq 比特币">
-        <p>比特币</p>
-      </div>
-    
 
   </div>
 </div>
@@ -392,6 +416,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/技术分享/" rel="tag"># 技术分享</a>
+          
+        </div>
       
 
       
@@ -486,6 +516,15 @@
 
             
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>
